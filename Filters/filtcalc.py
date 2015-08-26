@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # python
 
-from pylab import * 
+from math import * 
 
 
 # Receive cap values from user in nano-farads

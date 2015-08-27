@@ -3,6 +3,7 @@
 
 import math *
 from ..Resistors.resistor_vals import *
+from math import * 
 
 # Receive cap values from user in nano-farads
 capstr = input("Please enter available capacitor values in nF (space separated): ")

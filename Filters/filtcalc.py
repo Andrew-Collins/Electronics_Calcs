@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 # python
 
-from pylab import * 
-
+import math *
+from ..Resistors.resistor_vals import *
 
 # Receive cap values from user in nano-farads
-capstr = input("Please enter available capacitor values in nF (space separated)")
+capstr = input("Please enter available capacitor values in nF (space separated): ")
+
+# Receive resistor family string
+family_str = input("Please enter the IEC family of resistors: ")
 
 # Split these values into a list of integers
 c = map(int, capstr.split(' '))
@@ -18,7 +21,9 @@ R = []
 print ("Valid resistor values are: ")
 for element in c :
     x = 1/(fc * element * 2 * pi * 10**(-9))
-    print(element, "nF -> ", int(x), "Ohms")
+    # print(element, "nF -> ", int(x), "Ohms")
     R.append(x)
 
-
+for element in R :
+    temp = resistor_ratio(family_str, 1, element)
+    if ()

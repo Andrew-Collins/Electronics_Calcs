@@ -9,7 +9,8 @@
 #
 # Non standard libraries used: 
 
-from filtcalc import *
+__all__ = ['filtcalc']
 
+from . import filtcalc
 
 

@@ -16,7 +16,7 @@ def filtcalc() :
     family_str = input("Please enter the IEC family of resistors: ")
     
     # Split these values into a list of integers
-    c = map(int, capstr.split(' '))
+    c = map(float, capstr.split(' '))
     # Non-mapped cap array for later
     cp = []
     
@@ -30,7 +30,6 @@ def filtcalc() :
     print()
     # Generate the valid list of resistor values
     for element in c :
-        cp.append(element)
         result = 0
         k = 0
         # Calculate the float resistor value for 
@@ -64,6 +63,7 @@ def filtcalc() :
                 j = j + 1
             # Check if there was values found 
             if (found == 1) :
+                cp.append(element)
                 # Append the current array, to the total
                 #  list of values.
                 RT.append(R)

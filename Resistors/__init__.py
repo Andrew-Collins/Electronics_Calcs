@@ -9,8 +9,8 @@
 #
 # Non standard libraries used: 
 
-__all__ = ['resistor_vals', 'Voltage_Dividers']
+__all__ = ['resistor_vals', 'divcalc']
 
-from . import Voltage_Dividers 
+from . import volt_div
 from . import resistor_vals
 

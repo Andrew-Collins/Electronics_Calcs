@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # python
 
-# Title: rescalc.py
+# Title: volt_div.py
 #
 # Author: Andrew Collins
 # 
@@ -12,14 +12,14 @@
 
 # from resistor_vals import *
 
-from ..resistor_vals import *
+from .resistor_vals import family_list, resistor_ratio
 
 __all__ = ['ratio_calc']
 
 def ratio_calc():
     # print(values)
 
-    ratio = int(input("Enter resistive ratio:"))
+    ratio = float(input("Enter resistive ratio:"))
 
     result = 0
 

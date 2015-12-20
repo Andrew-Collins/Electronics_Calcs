@@ -3,7 +3,7 @@
 
 
 
-from ..Resistors.resistor_vals import *
+from .Resistors.resistor_vals import resistor_ratio
 from math import * 
 
 __all__ = ['filtcalc']

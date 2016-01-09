@@ -9,6 +9,6 @@
 #
 # Non standard libraries used: 
 
-__all__ = ['Resistors', 'Filters']
+__all__ = ['Resistors', 'filters', 'opamps']
 
 

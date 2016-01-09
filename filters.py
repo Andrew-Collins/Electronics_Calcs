@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 # python
 
+# Title: filters.py 
+#
+# Author: Andrew Collins
+# 
+# Description: Houses filter related functions. 
+#
+# Non standard libraries used: 
 
 
 from .Resistors.resistor_vals import resistor_ratio
@@ -8,6 +15,15 @@ from math import *
 
 __all__ = ['filtcalc']
 
+# Function name: filtcalc
+#
+# Description: Calculates resistor values for an RC filter given a set of capacitor values,  
+#               and a cutoff frequency.
+#
+# Inputs: none
+#
+# Outputs: none
+#
 def filtcalc() :
     # Receive cap values from user in nano-farads
     capstr = input("Please enter available capacitor values in nF (space separated): ")
